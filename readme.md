@@ -10,3 +10,6 @@ Feel free to submit a PR adding more components or improving library / documenta
 
 ### [`BloomFilter`](https://github.com/WillBrennan/learn_algo/tree/master/docs/BloomFilter.md)
 `BloomFilter` is a probabilistic space-efficient data-structure to say whether an element is in a set, where false-positives are possible but false-negatives are not. A `BloomFilter` with an optimal number of hashes only requires 20-bits per an element to achieve a false positive rate of 0.01%. A naive set of tweets would take 160 bytes per a tweet, a `BloomFilter` would take 2.4 bytes, being 66x smaller. Its also has a comparable speed to a hash-map.
+
+### [`ReserviourSampling`](https://github.com/WillBrennan/learn_algo/tree/master/docs/ReservoirSampling.md)
+`ReserviourSampling` is an online sampling method for randomly choosing *k* items from a list *S* with *n* elements. The number of elements, *n*, does not need to be known in advance and is often used when *S* is too big to fit into memory.
